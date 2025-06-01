@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  /* width: 100%;
+  height: 100vh; */
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  padding: 0 2vw;
+  height: 10vh;
+}
+
+.add-btn {
+  border-radius: 50%;
+  border: none;
+  width: clamp(30px, 5vw, 100px);
+  aspect-ratio: 1 / 1;
+  position: fixed;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  background: white;
+}
+
+.newword {
+  width: 100%;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  /* margin-bottom: 12px; */
+  margin: 0 0 12px 0;
+  color: #555;
+  padding: 2vh;
+}
+
+.comment {
+  width: 100%;
+  height: 70vh;
+  font-size: 1rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  resize: none;
+  color: #333;
+  margin: 0;
+  padding: 2vh;
+}
+
+.textarea-custom::placeholder {
+  color: #9ca3af;
+}
+
+.date-container {
+  text-align: center;
+}
+
+.date-inner-container {
+  text-align: left;
+  padding-top: 2vh;
+  padding-left: 2vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.date-inner-container button {
+  font-size: 10px;
+  background: white;
+  border: none;
+}
+
+.date-container p {
+  padding: 1vh 0;
+  margin: 0;
+  font-size: 10px;
+}
+
+.edit-container {
+  width: 90vw;
+  height: 90vh;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  margin: 0 auto;
+  position: fixed;
+  z-index: 10;
+  background: white;
+}
+
+.collection-container {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  margin: 2vh auto 0;
+}
+
+.collection-container p {
+  width: 100%;
+  padding: 1vh 2vh;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.col-inner-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2vh;
+}
+
+.col-inner-container div {
+  font-size: 10px;
+  color: grey;
+  margin-bottom: 1vh;
+}
+
+.delete-btn {
+  font-size: 8px;
+  border: none;
+  background: white;
+}
